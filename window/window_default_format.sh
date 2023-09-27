@@ -1,6 +1,6 @@
 show_window_default_format() {
   local number="#I"
-  local host="#W #F"
+  local host="#H"
   local color="$thm_blue"
   local background="$thm_bg"
   local text="$(get_tmux_option "@catppuccin_window_default_text" "host")" # use #W for application instead of directory
