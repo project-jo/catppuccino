@@ -141,16 +141,16 @@ build_status_module() {
     local show_icon="#[fg=$thm_bg,bg=$color,nobold,nounderscore,noitalics]$icon "
     local show_text="#[fg=$thm_fg,bg=$thm_black] $text"
 
-    local show_right_separator="#[fg=$thm_gray,bg=$thm_bg,nobold,nounderscore,noitalics]$status_right_separator"
+    local show_right_separator="#[fg=$thm_black,bg=$thm_bg,nobold,nounderscore,noitalics]$status_right_separator"
 
     if [ "$status_connect_separator" = "yes" ]
     then
       local show_left_separator="#[fg=$color,bg=$thm_black,nobold,nounderscore,noitalics]$status_left_separator"
-      local show_right_separator="#[fg=$thm_gray,bg=$thm_black,nobold,nounderscore,noitalics]$status_right_separator"
+      local show_right_separator="#[fg=$thm_black,bg=$thm_black,nobold,nounderscore,noitalics]$status_right_separator"
 
     else
       local show_left_separator="#[fg=$color,bg=$thm_bg,nobold,nounderscore,noitalics]$status_left_separator"
-      local show_right_separator="#[fg=$thm_gray,bg=$thm_bg,nobold,nounderscore,noitalics]$status_right_separator"
+      local show_right_separator="#[fg=$thm_black,bg=$thm_bg,nobold,nounderscore,noitalics]$status_right_separator"
     fi
 
   fi
@@ -180,7 +180,7 @@ build_status_module() {
   then
     if [ "$status_connect_separator" = "yes" ]
     then
-      local show_right_separator="#[fg=$thm_gray,bg=$color,nobold,nounderscore,noitalics]$status_right_separator"
+      local show_right_separator="#[fg=$thm_black,bg=$color,nobold,nounderscore,noitalics]$status_right_separator"
     else
       local show_right_separator="#[fg=$thm_bg,bg=$color,nobold,nounderscore,noitalics]$status_right_separator"
     fi
