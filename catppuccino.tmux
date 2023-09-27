@@ -78,7 +78,7 @@ build_window_format() {
     local show_left_separator="#[fg=$thm_gray,bg=$thm_bg,nobold,nounderscore,noitalics]$window_left_separator"
     local show_number="#[fg=$thm_fg,bg=$thm_gray]$number"
     local show_middle_separator="#[fg=$thm_fg,bg=$thm_gray,nobold,nounderscore,noitalics]$window_middle_separator"
-    local show_text="#[fg=$thm_fg,bg=$thm_gray]$text"
+    local show_text="#[fg=$thm_fg,bg=$thm_black]$text"
     local show_right_separator="#[fg=$thm_gray,bg=$thm_bg]$window_right_separator"
 
   fi
@@ -136,17 +136,17 @@ build_status_module() {
 
   if [ "$status_fill" = "icon" ]
   then
-    local show_left_separator="#[fg=$color,bg=$thm_gray,nobold,nounderscore,noitalics]$status_left_separator"
+    local show_left_separator="#[fg=$color,bg=$thm_black,nobold,nounderscore,noitalics]$status_left_separator"
 
     local show_icon="#[fg=$thm_bg,bg=$color,nobold,nounderscore,noitalics]$icon "
-    local show_text="#[fg=$thm_fg,bg=$thm_gray] $text"
+    local show_text="#[fg=$thm_fg,bg=$thm_black] $text"
 
     local show_right_separator="#[fg=$thm_gray,bg=$thm_bg,nobold,nounderscore,noitalics]$status_right_separator"
 
     if [ "$status_connect_separator" = "yes" ]
     then
-      local show_left_separator="#[fg=$color,bg=$thm_gray,nobold,nounderscore,noitalics]$status_left_separator"
-      local show_right_separator="#[fg=$thm_gray,bg=$thm_gray,nobold,nounderscore,noitalics]$status_right_separator"
+      local show_left_separator="#[fg=$color,bg=$thm_black,nobold,nounderscore,noitalics]$status_left_separator"
+      local show_right_separator="#[fg=$thm_gray,bg=$thm_black,nobold,nounderscore,noitalics]$status_right_separator"
 
     else
       local show_left_separator="#[fg=$color,bg=$thm_bg,nobold,nounderscore,noitalics]$status_left_separator"
@@ -157,12 +157,12 @@ build_status_module() {
 
   if [ "$status_fill" = "all" ]
   then
-    local show_left_separator="#[fg=$color,bg=$thm_gray,nobold,nounderscore,noitalics]$status_left_separator"
+    local show_left_separator="#[fg=$color,bg=$thm_black,nobold,nounderscore,noitalics]$status_left_separator"
 
     local show_icon="#[fg=$thm_bg,bg=$color,nobold,nounderscore,noitalics]$icon "
     local show_text="#[fg=$thm_bg,bg=$color]$text"
 
-    local show_right_separator="#[fg=$color,bg=$thm_gray,nobold,nounderscore,noitalics]$status_right_separator"
+    local show_right_separator="#[fg=$color,bg=$thm_black,nobold,nounderscore,noitalics]$status_right_separator"
 
     if [ "$status_connect_separator" = "yes" ]
     then
